@@ -55,4 +55,5 @@ node_pool_attributes = {
         pod_secondary_range = ""
         node_image_type="cos_containerd"
   },  
+  
 }
