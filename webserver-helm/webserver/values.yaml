@@ -14,4 +14,3 @@ resources:
 service:
   type: LoadBalancer
 imagepullsecret: regcred
-imagepullsecret: regcred
