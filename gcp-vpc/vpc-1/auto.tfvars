@@ -1,4 +1,4 @@
-project_id = "jithin-allex-cloud-dev"
+project_id = "jithin-allex-cloud-dev-01"
 vpc_name                            = "us-central1-allex-vpc-01"
 vpc_auto_create_subnetworks         = false
 vpc_delete_default_routes_on_create = false
