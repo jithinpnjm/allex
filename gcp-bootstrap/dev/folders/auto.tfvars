@@ -1,5 +1,5 @@
 folder_business_units= {
-    "dev": ["it-services"]
+    "dev": ["it-services","finance"]
 } 
 subfolders= {
     "dev": {
