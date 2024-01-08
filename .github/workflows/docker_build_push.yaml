@@ -33,6 +33,8 @@ jobs:
 
   update_helmchart:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
     needs: docker_image_build_push 
     env:
       image_tag: ${{ needs.docker_image_build_push.outputs.image_tag }}
