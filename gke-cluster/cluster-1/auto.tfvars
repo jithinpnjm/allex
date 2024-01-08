@@ -9,7 +9,7 @@ master_private_cidr_block      = "192.168.33.0/28"
 pods_cidr_range_name           = "us-central1-gke-pods-1"
 services_cidr_range_name       = "us-central1-gke-svcs-1"
 default_max_pods_per_node      = "16"
-serviceaccount                 = "svc-gke-nodes-local-svc-account@jithin-allex-cloud-dev-01.iam.gserviceaccount.com"
+serviceaccount                 = "svc-gke-nodes-lsvc-account@jithin-allex-cloud-dev-01.iam.gserviceaccount.com"
 auto_repair_nodes              = true
 auto_upgrade_nodes             = false
 gke_upgrade_channel            = "UNSPECIFIED"
@@ -21,8 +21,6 @@ master_authorized_network_cidr = [
         display_name = "subnet: us-central1-allex-vpc-1-sb-02"
     }
 ]
-
-
 // GKE enable/disable addons & backup
 addon_http_load_balancing                      = true
 addon_gce_persistent_disk_csi_driver_config    = true
@@ -39,7 +37,7 @@ allowed_image_registries      = [
     ]
 # GKE Node Pool Attributes
 node_pool_attributes = {
-    "allex-generic-pool-01" = {
+    "allex-generic-pool-1" = {
         node_count   = 1
         disk_size_gb = 100
         version = "1.25.12-gke.500"
@@ -54,5 +52,6 @@ node_pool_attributes = {
         nodepool_locations = ["us-central1-f"]
         pod_secondary_range = ""
         node_image_type="cos_containerd"
-  },
+  },  
 }
+
