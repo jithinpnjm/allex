@@ -39,7 +39,7 @@ allowed_image_registries      = [
     ]
 # GKE Node Pool Attributes
 node_pool_attributes = {
-    "allex-generic-pool-1" = {
+    "allex-generic-pool-01" = {
         node_count   = 1
         disk_size_gb = 100
         version = "1.25.12-gke.500"
