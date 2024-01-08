@@ -8,4 +8,5 @@ project_attributes = {
         folder_id                         = "462162860246"
         services_enable                   = ["compute.googleapis.com","cloudresourcemanager.googleapis.com","logging.googleapis.com","storage.googleapis.com","binaryauthorization.googleapis.com","container.googleapis.com"]
     },
+    
 }
