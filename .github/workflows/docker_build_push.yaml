@@ -30,7 +30,6 @@ jobs:
         echo "image_tag=$GITHUB_SHA_SHORT" >> "$GITHUB_OUTPUT"
     - name: Docker Push
       run: docker push $DOCKER_USER/$REPO_NAME:$GITHUB_SHA_SHORT
-
   update_helmchart:
     runs-on: ubuntu-latest
     permissions:
@@ -46,7 +45,7 @@ jobs:
           valueFile: 'webserver-helm/webserver/values.yaml'
           propertyPath: 'image.tag'
           value: ${{ env.image_tag }}
-          branch: test
+          branch: development
           targetBranch: main
           createPR: true
           message: 'Update Image Version to ${{ env.image_tag }}' 
