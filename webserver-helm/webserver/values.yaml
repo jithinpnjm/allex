@@ -1,0 +1,17 @@
+fullnameOverride: nginx-webserver
+namespace: nginx
+image:
+  repo: docker.io/jithinpnjm/allex
+  tag: 9a06ff
+replicas: '2'
+resources:
+  limits:
+    cpu: 200m
+    memory: 200Mi
+  requests:
+    cpu: 100m
+    memory: 100Mi
+service:
+  type: LoadBalancer
+imagepullsecret: regcred
+imagepullsecret: regcred
