@@ -32,8 +32,7 @@ jobs:
       run: docker push $DOCKER_USER/$REPO_NAME:$GITHUB_SHA_SHORT
   update_helmchart:
     runs-on: ubuntu-latest
-    permissions:
-      pull-requests: write
+    permissions: write-all
     needs: docker_image_build_push 
     env:
       image_tag: ${{ needs.docker_image_build_push.outputs.image_tag }}
