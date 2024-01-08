@@ -61,7 +61,6 @@ gcp_router_name                  ="gc-cloud-router"
 gcp_nat_region                   = "us-central1",
 nat_ip_allocate_option             = "AUTO_ONLY"
 subnetwork_ip_ranges_to_nat = "ALL_SUBNETWORKS_ALL_IP_RANGES"
-
 },
 }
 
