@@ -54,6 +54,5 @@ node_pool_attributes = {
         nodepool_locations = ["us-central1-f"]
         pod_secondary_range = ""
         node_image_type="cos_containerd"
-  },  
-  
+  },
 }
