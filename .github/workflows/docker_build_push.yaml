@@ -1,4 +1,4 @@
-name: DockerBuild
+name: dockerbuild CI
 on:
   push:
     branches:
