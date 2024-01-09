@@ -5,6 +5,7 @@ vpc_delete_default_routes_on_create = false
 vpc_routing_mode                    = "REGIONAL"
 region                              = "us-central1"
 
+
 subnet_attributes = {
   "us-central1-allex-vpc-2-sb-01" = {
     "subnet_region"                   = "us-central1",
