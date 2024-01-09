@@ -2,7 +2,7 @@ fullnameOverride: nginx-webserver
 namespace: nginx
 image:
   repo: docker.io/jithinpnjm/allex
-  tag: 02dc56
+  tag: b51ee9
 replicas: '2'
 resources:
   limits:
